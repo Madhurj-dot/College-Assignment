@@ -1,39 +1,41 @@
 <html>
+
 <head>
-    <title>CodeMaster Academy Dashboard</title>  
+    <title>CodeMaster Academy Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    
+
+<body>
+
     <h1 align="center">CodeMaster Academy</h1>
     <h2 align="center">Student Dashboard</h2>
 
     <hr>
 
-    <!-- Courses Section -->
-    <h2>Enrolled Courses</h2>
-
     <!-- Web Development -->
-    <div>
-        <img src="webdev.jpeg ">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript</p>
-        <progress value="80" max="100"></progress>
-    </div>
+    <h2 class="section-title">Enrolled Courses</h2>
+    <!-- Web Development -->
+    <div class="course-container">
+        <div class="course-card">
+            <img src="webdev.jpeg" alt="Web Dev">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <progress value="80" max="100"></progress>
+        </div>
 
-    <!-- Python -->
-    <div>
-        <img src="python.jpeg">
-        <h3>Python Programming</h3>
-        <p>Beginner to Advanced</p>
-        <progress value="55" max="100"></progress>
-    </div>
-    
-    <!-- Data Structures -->
-    <div>
-        <img src="datastr.jpeg">
-        <h3>Data Structures</h3>
-        <p>Core Concepts</p>
-        <progress value="30" max="100"></progress>
+        <div class="course-card">
+            <img src="python.jpeg" alt="Python">
+            <h3>Python Programming</h3>
+            <p>Beginner to Advanced</p>
+            <progress value="55" max="100"></progress>
+        </div>
+
+        <div class="course-card">
+            <img src="datastr.jpeg" alt="DSA">
+            <h3>Data Structures</h3>
+            <p>Core Concepts</p>
+            <progress value="30" max="100"></progress>
+        </div>
     </div>
 
     <hr>
