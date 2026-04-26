@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 20px;
+    color: DarkSlateGrey;
+}
+
+h1 {
+    color: RoyalBlue;
+    text-shadow: 2px 2px LightSteelBlue;
+}
+
+h2 {
+    color: SlateGrey;
+}
+
+.section-title {
+    color: DarkMidnightBlue;
+    border-left: 6px solid DeepSkyBlue;
+    padding-left: 15px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.course-card {
+    background-color: White;
+    border: 2px solid LightGrey;
+    border-radius: 15px;
+    width: 260px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 5px 5px 15px Silver;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    border-color: CornflowerBlue;
+}
+
+.course-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 22px;
+    accent-color: MediumSeaGreen;
+}
+
+ul {
+    background-color: White;
+    padding: 25px 50px;
+    border-radius: 12px;
+    border: 1px solid White;
+}
+
+li {
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: FireBrick;
+}
+
+
+p[align="center"] {
+    margin-top: 60px;
+    font-size: 14px;
+    color: Grey;
+}
