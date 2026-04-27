@@ -1,78 +1,229 @@
+/* Custom Properties for easy theme management */
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-color: #f0f2f5;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-main: #2d3436;
+    --accent-color: #6c5ce7;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
-    margin: 20px;
-    color: DarkSlateGrey;
+    background-color: var(--bg-color);
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
 }
 
+/* Glassy Navbar */
+.navbar {
+    background: var(--primary-gradient) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 0.8rem 2rem;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+/* Dashboard Header */
 h1 {
-    color: RoyalBlue;
-    text-shadow: 2px 2px LightSteelBlue;
-}
-
-h2 {
-    color: SlateGrey;
+    font-weight: 800;
+    color: #2d3436;
+    margin-top: 2rem;
 }
 
 .section-title {
-    color: DarkMidnightBlue;
-    border-left: 6px solid DeepSkyBlue;
-    padding-left: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1.5rem;
+    position: relative;
+    display: inline-block;
 }
 
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* Modern Course Grid */
 .course-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
 }
 
-.course-card {
-    background-color: White;
-    border: 2px solid LightGrey;
-    border-radius: 15px;
-    width: 260px;
-    text-align: center;
-    padding: 15px;
-    box-shadow: 5px 5px 15px Silver;
-    transition: transform 0.3s;
+.course-link {
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.course-card:hover {
+.course-link:hover {
     transform: translateY(-10px);
-    border-color: CornflowerBlue;
+}
+
+/* Glassy Card Style */
+.course-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    backdrop-filter: blur(10px);
+    text-align: center;
 }
 
 .course-card img {
-    width: 100%;
-    height: 160px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    margin-bottom: 1.2rem;
     object-fit: cover;
-    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
 }
 
+.course-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #636e72;
+    margin-bottom: 1.5rem;
+}
+
+/* Custom Progress Bars */
 progress {
     width: 100%;
-    height: 22px;
-    accent-color: MediumSeaGreen;
+    height: 8px;
+    border-radius: 10px;
+    appearance: none;
+}
+/* DSA Course Header */
+.dsa-header {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 4rem 1.5rem;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 2rem;
 }
 
-ul {
-    background-color: White;
-    padding: 25px 50px;
-    border-radius: 12px;
-    border: 1px solid White;
+/* Fix: Prevent Course Images from shrinking */
+.course-card img {
+    width: 100%; /* Ensures the image fills the card width */
+    height: 180px; /* Maintains a consistent height */
+    object-fit: cover; /* Prevents stretching while staying full-size */
+    border-radius: 15px;
+    margin-bottom: 1.2rem;
+    flex-shrink: 0; /* Forces the browser not to minimize the image */
 }
 
-li {
-    margin-bottom: 12px;
-    font-weight: bold;
-    color: FireBrick;
+/* Glassmorphism for DSA Cards */
+.card.border-0.shadow-sm {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 25px;
 }
 
+/* Video Container for DSA */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
 
-p[align="center"] {
-    margin-top: 60px;
-    font-size: 14px;
-    color: Grey;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Takeaway Box Styling */
+.bg-light.border-start.border-4.border-primary {
+    background: rgba(102, 126, 234, 0.1) !important;
+    border-left-color: var(--accent-color) !important;
+    border-radius: 8px;
+    color: var(--text-main);
+}
+/* Enhanced Hover Effect for Course Cards */
+.course-link:hover .course-card {
+    border-color: var(--accent-color) !important; /* Changes border to your purple accent */
+    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2); /* Adds a soft glow */
+    background: rgba(255, 255, 255, 1); /* Makes it slightly more opaque on hover */
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Optional: Add a subtle border to the cards by default so the change is visible */
+.course-card {
+    border: 2px solid transparent; /* Keeps layout stable when border appears */
+    transition: all 0.3s ease;
+}
+/* Custom styling for the search button */
+.btn-outline-success {
+    color: var(--accent-color); /* Uses your purple/blue accent */
+    border-color: var(--accent-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+/* Home Hero Section */
+.home-hero {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 50px 50px;
+    margin-top: -76px; /* Pulls hero under the transparent navbar */
+}
+
+/* Home Button Styling */
+.btn-primary {
+    background: var(--primary-gradient);
+    border: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Feature Icon Animation */
+.course-card:hover .fs-1 {
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+/* Adjusting Nav for Home */
+.navbar-dark .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8) !important;
 }
