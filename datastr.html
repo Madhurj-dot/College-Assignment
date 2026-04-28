@@ -6,39 +6,91 @@
     <title>Data Structures & Algorithms | CodeMaster Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <header class="dsa-header text-center">
-        <h1 class="display-4 fw-bold">Data Structures & Algorithms</h1>
+    <div class="dsa-header text-center shadow py-5 text-white" style="background: var(--primary-gradient);">
+        <h1 class="display-3 fw-bold">Data Structures & Algorithms</h1>
         <p class="lead">Optimize your code. Solve complex problems. Master C++.</p>
-    </header>
+    </div>
 
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-8">
-                <div class="card border-0 shadow-sm mb-4 overflow-hidden">
-                    <div class="card-body p-4">
-                        <h2 class="h3 mb-4">Lecture 1: Flowcharts, Pseudocode & Setup</h2>
-                        <div class="video-container shadow">
-                            <iframe src="https://www.youtube.com/embed/VTLCoHnyACE" 
-                                    title="DSA Lecture 1" 
-                                    frameborder="0" 
-                                    allowfullscreen>
-                            </iframe>
+                <div class="card border-0 shadow-sm p-4 mb-4">
+                    <h2 class="h3 mb-4">Lecture 1: Flowcharts, Pseudocode & Setup</h2>
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/VTLCoHnyACE" 
+                                title="DSA Lecture 1" 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px;"
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>About this Module</h4>
+                        <p>As Shradha Ma'am explains, companies test your problem-solving skills through DSA to see how efficiently you can manage data and optimize algorithms. [00:01:58]</p>
+                        
+                        <div class="alert alert-primary border-start border-4">
+                            <strong>Key Takeaway:</strong> Don't just learn "Pseudocode." Aim for complete code implementation to avoid a false sense of security. [00:00:29]
                         </div>
+
                         <div class="mt-4">
-                            <h5>Why Study DSA?</h5>
-                            <p>As Shradha Ma'am explains, companies test your problem-solving skills through DSA to see how efficiently you can manage data and optimize algorithms. [00:01:58]</p>
-                            
-                            <div class="p-3 bg-light border-start border-4 border-primary rounded">
-                                <strong>Key Takeaway:</strong> Don't just learn "Pseudocode." Aim for complete code implementation to avoid a false sense of security. [00:00:29]
-                            </div>
+                            <h4>The Learning Roadmap</h4>
+                            <p class="text-muted">This roadmap shows the logical progression of topics. We start with simple logic (Flowcharts) and move toward complex non-linear structures. [00:03:00]</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="card border-0 shadow-sm p-4">
-                    <h3>The Learning Roadmap</h3>
-                                        <p class="text-muted mt-3">This roadmap shows the logical progression of topics we will cover in this series. We start with simple logic (Flowcharts) and move toward complex non-linear structures. [00:03
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm p-4 sticky-top" style="top: 20px;">
+                    <h3 class="mb-4">Course Curriculum</h3>
+                    
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-2">
+                            <div>
+                                <h6 class="mb-0">Flowcharts & Setup</h6>
+                                <p class="small text-muted mb-0">Basic Logic [00:00:29]</p>
+                            </div>
+                            <span class="badge bg-primary">Current</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-2">
+                            <div>
+                                <h6 class="mb-0">Variables & Data Types</h6>
+                                <p class="small text-muted mb-0">Memory Management</p>
+                            </div>
+                            <span class="badge bg-secondary">Locked</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-2">
+                            <div>
+                                <h6 class="mb-0">Arrays & Vectors</h6>
+                                <p class="small text-muted mb-0">Linear Structures</p>
+                            </div>
+                            <span class="badge bg-secondary">Locked</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-2 bg-light p-2 rounded">
+                            <div>
+                                <h6 class="mb-0">Binary Trees</h6>
+                                <p class="small text-muted mb-0">Hierarchical Data</p>
+                            </div>
+                            <span class="badge bg-secondary">Locked</span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <button class="btn btn-primary fw-bold">Download DSA Roadmap</button>
+                        <button class="btn btn-outline-secondary" onclick="window.close()">Return to Dashboard</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted border-top">
+        <p>© 2026 CodeMaster Academy | DSA Track</p>
+    </footer>
+
+</body>
+</html>

@@ -5,91 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Security | CodeMaster Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="cyber-header text-center">
-        <h1 class="display-5 fw-bold">System.Security.Initialize()</h1>
+    <div class="cyber-header text-center shadow py-5 text-white" style="background: var(--primary-gradient);">
+        <h1 class="display-3 fw-bold">System.Security.Initialize()</h1>
         <p class="lead">Defending the Digital Frontier</p>
-    </header>
+    </div>
 
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-8">
-                <div class="card bg-dark border-secondary shadow mb-4">
-                    <div class="card-body p-4">
-                        <h2 class="h3 mb-4 text-success">Roadmap 2025: Beginner's Guide</h2>
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/BLRFduFGrfI" 
-                                    title="Cyber Security Roadmap" 
-                                    frameborder="0" 
-                                    allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div class="mt-4">
-                            <h5>Mission Objective</h5>
-                            <p>This roadmap by <strong>CodeWithHarry</strong> highlights that Cyber Security isn't just about hacking—it's primarily about <strong>Defensive Security</strong> and protecting organizations from rising threats like ransomware. [00:01:04]</p>
-                        </div>
+                <div class="card border-0 shadow-sm p-4 mb-4">
+                    <h2 class="h3 mb-4 text-primary">Roadmap 2025: Beginner's Guide</h2>
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/BLRFduFGrfI" 
+                                title="Cyber Security Roadmap" 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px;"
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
                     </div>
-                </div>
-
-                <div class="row g-3">
-                    <h3 class="text-info mt-4">The 5 Pillars of Security [00:03:26]</h3>
-                    <div class="col-md-4">
-                        <div class="pillar-card h-100">
-                            <h6>1. General Computing</h6>
-                            <p class="small text-muted">CPU, RAM, and OS Fundamentals.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="pillar-card h-100">
-                            <h6>2. Networking</h6>
-                            <p class="small text-muted">OSI Model, TCP/IP, and Protocols.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="pillar-card h-100">
-                            <h6>3. Linux & Windows</h6>
-                            <p class="small text-muted">Command Line and File Systems.</p>
+                    
+                    <div class="mt-4">
+                        <h4>Mission Objective</h4>
+                        <p>This roadmap by <strong>CodeWithHarry</strong> highlights that Cyber Security isn't just about hacking—it's primarily about <strong>Defensive Security</strong> and protecting organizations from rising threats like ransomware. [00:01:04]</p>
+                        
+                        <h4 class="mt-4">The 5 Pillars of Security [00:03:26]</h4>
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded h-100 bg-light">
+                                    <h6 class="fw-bold">1. General Computing</h6>
+                                    <p class="small text-muted mb-0">CPU, RAM, and OS Fundamentals.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded h-100 bg-light">
+                                    <h6 class="fw-bold">2. Networking</h6>
+                                    <p class="small text-muted mb-0">OSI Model, TCP/IP, and Protocols.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded h-100 bg-light">
+                                    <h6 class="fw-bold">3. OS Mastery</h6>
+                                    <p class="small text-muted mb-0">Command Line and File Systems.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card bg-dark border-secondary p-4 mb-4">
-                    <h4 class="text-warning">Career Paths [00:08:28]</h4>
-                    <ul class="list-unstyled mt-3">
-                        <li class="mb-3">
-                            <span class="badge badge-offensive">Offensive</span>
-                            <p class="small mt-1">Penetration Tester, Exploit Developer.</p>
-                        </li>
-                        <li class="mb-3">
-                            <span class="badge badge-defensive">Defensive</span>
-                            <p class="small mt-1">Security Engineer, Incident Responder.</p>
-                        </li>
-                    </ul>
-                    <p class="small text-muted italic">Note: For every 1 offensive job, there are 10 defensive jobs. [00:02:13]</p>
-                </div>
+                <div class="card border-0 shadow-sm p-4 mb-4 sticky-top" style="top: 20px;">
+                    <h3 class="mb-4">Syllabus & Paths</h3>
+                    
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-2">
+                            <div>
+                                <h6 class="mb-0">Foundations</h6>
+                                <p class="small text-muted mb-0">Security Pillars [00:03:26]</p>
+                            </div>
+                            <span class="badge bg-success">Done</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-2">
+                            <div>
+                                <h6 class="mb-0">Career Navigation</h6>
+                                <p class="small text-muted mb-0">Offense vs Defense [00:08:28]</p>
+                            </div>
+                            <span class="badge bg-primary">Next</span>
+                        </div>
+                    </div>
 
-                <div class="card bg-dark border-secondary p-4">
-                    <h4 class="text-success">Quick Commands</h4>
-                    <code class="d-block mb-2 text-light">> ipconfig /all</code>
-                    <code class="d-block mb-2 text-light">> netstat -ano</code>
-                    <code class="d-block mb-4 text-light">> whoami</code>
-                    <p class="small text-muted">Master these commands as a first step in your security journey! [00:06:40]</p>
-                    <div class="d-grid">
-                        <button class="btn btn-outline-success" onclick="window.close()">Terminal.Exit()</button>
+                    <div class="mt-4 p-3 bg-dark text-success rounded shadow-sm">
+                        <h6 class="text-white border-bottom border-secondary pb-2">Quick Terminal</h6>
+                        <code class="d-block mb-1 text-success">> ipconfig /all</code>
+                        <code class="d-block mb-1 text-success">> netstat -ano</code>
+                        <code class="d-block text-success">> whoami</code>
+                    </div>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <button class="btn btn-primary fw-bold">Download Path PDF</button>
+                        <button class="btn btn-outline-secondary" onclick="window.close()">Exit Console</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    <footer class="text-center py-5 text-muted">
-        <p>CONSOLE_LOG: © 2026 CodeMaster Academy | Security.IO</p>
+
+    <footer class="text-center py-4 text-muted border-top">
+        <p>© 2026 CodeMaster Academy | Security Track</p>
     </footer>
 
 </body>
